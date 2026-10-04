@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
-import { Heart, User, Lock, Eye, EyeOff, HelpCircle, AlertCircle } from 'lucide-react'
+import { Heart, Crown, User, Lock, Eye, EyeOff, HelpCircle, AlertCircle } from 'lucide-react'
 import confetti from 'canvas-confetti'
-import princessImg from '../images/princess.jpeg'
 
 interface RomanticLoginProps {
   onSuccess: () => void
@@ -17,7 +16,6 @@ export const RomanticLogin: React.FC<RomanticLoginProps> = ({ onSuccess }) => {
   const [showHintModal, setShowHintModal] = useState(false)
   const [isLoading, setIsLoading] = useState(false)
 
-  // Environment credentials from .env with fallbacks
   const targetUser = import.meta.env.VITE_LOGIN_USER || 'princesa'
   const targetPassword = import.meta.env.VITE_LOGIN_PASSWORD || '10112024'
 
@@ -50,17 +48,17 @@ export const RomanticLogin: React.FC<RomanticLoginProps> = ({ onSuccess }) => {
 
   return (
     <div className="login-page-container">
-      {/* Lilac Card matching reference */}
+      {/* Lilac Card matching screenshot */}
       <div className={`romantic-card ${isShaking ? 'shake-animation' : ''}`}>
-        {/* Princess Photo Badge */}
+        {/* Crown Badge */}
         <div className="card-header">
-          <div className="princess-avatar-wrapper">
-            <img src={princessImg} alt="Princesa" className="princess-avatar-img" />
+          <div className="crown-badge">
+            <Crown className="crown-badge-icon" />
           </div>
 
-          {/* Title: HappyBirthday Princesa */}
+          {/* Title: Para Mi Princesa */}
           <h1 className="card-title">
-            <span className="script-part">HappyBirthday</span>
+            <span className="script-part">Para Mi</span>
             <span className="highlight-part">Princesa</span>
           </h1>
 
