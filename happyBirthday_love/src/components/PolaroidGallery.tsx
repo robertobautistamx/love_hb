@@ -50,7 +50,7 @@ export const PolaroidGallery: React.FC = () => {
           <Camera size={24} color="#c85084" />
         </div>
         <h2 className="polaroid-title">📷 Álbum de Recuerdos Polaroid</h2>
-        <p className="polaroid-subtitle">Pared de fotografías — Toca cualquier foto para verla en grande:</p>
+        <p className="polaroid-subtitle">Pared de fotografías; Toca cualquier foto para verla en grande:</p>
       </div>
 
       <div className="polaroid-photo-wall">

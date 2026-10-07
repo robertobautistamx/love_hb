@@ -55,26 +55,33 @@ export const LoveLetter: React.FC = () => {
           {/* Letter Body (Placeholder for user to edit) */}
           <div className="letter-body">
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat.
+              ¡¡ FELIICIDADESS !! mi princesita hermosa😍, otro año más de vida y que mejor
+              festejarlo a tu lado, deseo que sigas cumpliendo muchos años más, que sigamos
+              juntos en esta vida tan hermosa y que cada día sea mejor que el anterior🥹.
+              Gracias por ser como eres, por amarme como me amas y por hacerme tan feliz🥹
             </p>
             <p>
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-              in culpa qui officia deserunt mollit anim id est laborum.
+              Cada momento a tu lado es un tesoro que guardo en mi corazón, cada sonrisa tuya
+              es una caricia para mi alma, cada beso tuyo es un suspiro que me llena de amor🥹.
+              Eres mi todo, mi vida, mi amor, mi todo🥹.
             </p>
             <p>
-              Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius,
-              turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis
-              sollicitudin mauris.
+              Y hoy en tu día especial, quiero que sepas que te amo más de lo que las palabras
+              pueden expresar🥹.
+            </p>
+            <p>
+              Por favor nunca cambies, porque eres perfecta tal y como eres😍😘, y quiero que sepas
+              que siempre estaré aquí para ti, en las buenas y en las malas, en la salud y en la
+              enfermedad, en la riqueza y en la pobreza, en la alegría y en la tristeza🥹.
+            </p>
+            <p>
+              Te amo MUUUUCHOOOOOOOOOOOO😍❤️
             </p>
           </div>
 
           {/* Letter Signature */}
           <div className="letter-footer">
-            <p className="letter-signature">Con todo mi amor ♥</p>
+            <p className="letter-signature">Con todo mi amor, tu principe ♥</p>
           </div>
         </div>
       )}
