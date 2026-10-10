@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Heart, Mail, Sparkles, X } from 'lucide-react'
+import { Mail, Sparkles, X } from 'lucide-react'
 import confetti from 'canvas-confetti'
 
 export const LoveLetter: React.FC = () => {

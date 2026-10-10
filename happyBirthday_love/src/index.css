@@ -1000,14 +1000,16 @@ html, body {
 }
 
 .playlist-bar {
+  position: relative;
   background: #ffffff;
   border: 1px solid var(--input-border);
   border-radius: 28px;
-  padding: 8px 16px;
+  padding: 8px 16px 14px 16px;
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 12px;
   box-shadow: 0 4px 15px rgba(186, 142, 192, 0.15);
+  overflow: hidden;
 }
 
 .track-info {
@@ -1032,7 +1034,7 @@ html, body {
   display: flex;
   flex-direction: column;
   text-align: left;
-  max-width: 170px;
+  max-width: 150px;
 }
 
 .track-title {
@@ -1055,10 +1057,28 @@ html, body {
   margin-top: 2px;
 }
 
+.player-time-badge {
+  font-size: 0.72rem;
+  font-weight: 500;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  color: var(--text-muted);
+  background: #fdf0f6;
+  padding: 3px 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  white-space: nowrap;
+}
+
+.player-time-badge .time-separator {
+  opacity: 0.5;
+}
+
 .player-controls {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .control-btn-icon {
@@ -1100,9 +1120,60 @@ html, body {
   background: var(--btn-hover);
 }
 
+.playlist-scrubber-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.playlist-scrubber-input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 5px;
+  border-radius: 0;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  transition: height 0.15s ease;
+}
+
+.playlist-scrubber-input:hover {
+  height: 7px;
+}
+
+.playlist-scrubber-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-pink, #e85d9e);
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(232, 93, 158, 0.5);
+  transition: transform 0.15s ease;
+}
+
+.playlist-scrubber-input:hover::-webkit-slider-thumb {
+  transform: scale(1.3);
+}
+
+.playlist-scrubber-input::-moz-range-thumb {
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 50%;
+  background: var(--text-pink, #e85d9e);
+  cursor: pointer;
+}
+
 .playlist-menu {
   position: absolute;
-  top: 54px;
+  top: 58px;
   left: 0;
   width: 320px;
   background: #ffffff;
@@ -1129,6 +1200,9 @@ html, body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  max-height: 280px;
+  overflow-y: auto;
+  padding-right: 4px;
 }
 
 .playlist-item {
