@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Gamepad2, Trophy, RefreshCw, Heart, Sparkles, User, Crown } from 'lucide-react'
+import { Gamepad2, Trophy, RefreshCw, Heart, User, Crown } from 'lucide-react'
 import confetti from 'canvas-confetti'
 
 // Import all images from src/images/images_play

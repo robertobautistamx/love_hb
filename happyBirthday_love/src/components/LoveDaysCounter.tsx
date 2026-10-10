@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-import { Clock, Heart, Sparkles } from 'lucide-react'
 
 export const LoveDaysCounter: React.FC = () => {
   const [timeTogether, setTimeTogether] = useState({

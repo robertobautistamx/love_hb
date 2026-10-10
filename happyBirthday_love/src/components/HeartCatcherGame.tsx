@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react'
-import { Heart, Sparkles, Trophy, Play, RotateCcw, Timer, Award } from 'lucide-react'
+import { Heart, Trophy, Play, RotateCcw, Timer, Award } from 'lucide-react'
 import confetti from 'canvas-confetti'
 
 interface FallingItem {
